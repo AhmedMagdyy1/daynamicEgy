@@ -3,6 +3,9 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+  padding: 0;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -10,4 +13,19 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Customize scrollbar (WebKit browsers) */
+body::-webkit-scrollbar {
+  width: 12px;
+  
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 17px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
 }
